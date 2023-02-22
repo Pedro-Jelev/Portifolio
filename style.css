@@ -6,7 +6,7 @@
   --fs-span: 2.8rem;
   --fs-p: 2.2rem;
 
-  --tot-height: 140rem;
+  --tot-height: 300rem;
 }
 
 * {
@@ -131,7 +131,7 @@ h2 {
   flex-direction: column;
 }
 
-ol li+li {
+#skills ol li+li {
   margin-top: 4rem;
 }
 
@@ -215,4 +215,48 @@ hr {
 
 #skills li+li {
   margin-top: 1rem;
+}
+
+#project li span {
+  font-size: var(--fs-span);
+}
+
+#project ol {
+  display: flex;
+  gap: 4rem;
+}
+
+#project li {
+  list-style: none;
+}
+
+#project ol li{
+  position: relative;
+}
+
+#project .sub-menu {
+  background: rgb(42, 39, 39);
+  border-radius: 10px;
+  padding: 1rem 1.6rem;
+  position: absolute;
+  left: 0;
+  top: calc(100% +10px);
+  display: none;
+}
+
+#project ol li span:hover+.sub-menu {
+  cursor: pointer;
+  display: block;
+}
+
+#project .sub-menu:hover {
+  display: block;
+}
+
+#project .sub-menu li+li {
+  margin-top: 6px;
+}
+
+#project .sub-menu a:hover {
+  text-decoration: underline;
 }
