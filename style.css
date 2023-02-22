@@ -219,6 +219,7 @@ hr {
 
 #project li span {
   font-size: var(--fs-span);
+  text-decoration: underline #1B3732;
 }
 
 #project ol {
@@ -230,7 +231,7 @@ hr {
   list-style: none;
 }
 
-#project ol li{
+#project ol li {
   position: relative;
 }
 
